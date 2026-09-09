@@ -26,13 +26,10 @@ goal = "cdeab"
 Output: True
 
 def rotateString(s, goal):
-    ltr = []
-
-    for i,j in enumerate(s):
-        print(s[i:len(s)])
-
-
-
+    val = []
+    for idx,elem in enumerate(s):
+        val.append(idx)
+    print(idx)
 
 
 rotateString(s, goal)

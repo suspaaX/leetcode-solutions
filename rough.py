@@ -409,6 +409,30 @@ arr = [10,20,30,40,50]
 # print(lst)
 
 
-k = ['12']
-for i in k:
-    
+# k = ['12']
+# for i in k:
+
+
+#820 — Short Encoding of Words — Medium — 60.9%
+#318 — Maximum Product of Word Lengths — Medium — 61.3%
+#692 — Top K Frequent Words — Medium — 60.2%
+#648 — Replace Words — Medium — 68.8%
+#1247 — Minimum Swaps to Make Strings Equal — Medium — 65.5%    
+#53 — Maximum Subarray — 53.5%
+#209 — Minimum Size Subarray Sum — 51.7%
+#1968 — Array With Elements Not Equal to Average of Neighbors — 50.8%
+#912 — Sort an Array — 55.9%
+#1395 — Count Number of Teams — 70.2%
+#221 — Maximal Square — 50.5%
+#525 — Contiguous Array — 51.4%
+#1922 — Count Good Numbers — 57.8%
+#152 — Maximum Product Subarray — 36.6% ❌ इसलिए इसे मत लेना
+#79 — Word Search — 47.6% ❌ इसलिए इसे भी मत लेना
+
+
+num =124
+
+x = num%0 
+print(x)
+
+

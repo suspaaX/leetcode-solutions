@@ -32,7 +32,13 @@ Output = "AceCreIm"
 
 
 def reverseVowels(s):
-    
+    lst = []
+    dict1 = {'a', 'e', 'i', 'o', 'u','A', 'E', 'I', 'O','U'}
+    for ltr in dict1:
+        if ltr in s:
+            m = s.replace(ltr,'0')
+            print(m)
+
 
 
 

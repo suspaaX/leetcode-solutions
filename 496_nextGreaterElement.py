@@ -50,36 +50,24 @@ nums2 = [6,5,4,3,2,1,7]
 Output = [7,7,7,7,7]
 
 
-# nums1 = [2,4]
-# nums2 = [1,3,4,2]
-# Output = [-1,3,-1]
+nums1 = [2,4]
+nums2 = [1,2,3,4]
+Output = [-1,3,-1]
 
 def nextGreaterElement(nums1,nums2):
+    rslt = []
+    for i in range(len(nums1)-1):
+        if i in nums2:
+            m = nums2.index(i)
+            print(nums2[m+1])
 
-    rst = []
-    for i in nums1:
-        idx = nums2.index(i)
-        idx2 = nums2[idx:len(nums2)]
-        rst.append(idx2)        
-        # for m in idx2:
-        #     if i<m:
-        #         print('yes')
-        #         # rst.append(m)
-        #     else:
-        #         print('no')
-        #         # rst.append(-1)
-        rst3 = []
-        for kl in rst:
-            rst2 = []
-            for m in kl:
-                if i < m:
-                    rst2.append(m)
-                else:
-                    rst2.append(-1)
+    #         if nums2[m+1]>i:
+    #             rslt.append[m+1]
+    #         else:
+    #             rslt.append(-1)
+    # print(rslt)
 
 
-                    print(rst2)
-            
 
 
 

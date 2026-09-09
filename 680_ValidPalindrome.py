@@ -25,35 +25,49 @@ Output: false
 
 
 
-s = "abc"
-Output =  False
 
-# s = "abca"
-# Output: False
+s = "abca"
+Output: False
 
 
-# s = "bebeb"
+s = "bebeb"
+Output =  True
+
+
+# s = "aba"
 # Output =  True
+
+# s = "abc"
+# Output =  False
 
 # s = "cbbcc"
 # Output =  True
 
-s = "aba"
-Output =  True
-
 def validPalindrome(s) :
-
-    lst = []
-    for i in range(0,len(s)):
-        for k in s:
-            lst.append()
-
-
-    pali = s[::-1]
-    if s == pali:
+    s2 = s[:]
+    s2_rev = s[::-1]
+    
+    if s == s2_rev:
         return True
+    
+    elif s != s2_rev:
+        result = []
+        for i in range(len(s)):
+            reslt = s[:i] + s[i+1:]
+            result.append(reslt)
+        
+        result3 = []
+        for k in result:
+            k2 = k[::-1]
+            if k[:] == k2:
+                result3.append(True)
+            else:
+                result3.append(False)
+            
+        if True in result3:
+            return True
+        else:
+            return False
 
-    else:
-        return False
         
 print((validPalindrome(s)))

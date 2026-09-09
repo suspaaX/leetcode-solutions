@@ -42,13 +42,15 @@ prices = [8,4,6,2,3]
 Output = [4,2,4,2,3]
 
 def finalPrices(prices):
-    result = []
-    for i in range(len(prices)-1):
-        for k in prices:
-            print(prices[i],(prices[i+1:len(prices)]))
+    # result = []
+    # for i in range(len(prices)):
+    #     for k in prices:
+    #         if k<prices[i+1:len(prices)]:
+    #             r = prices[i]-k
+    #             result.append(r)
 
-
-
+    # print(result)
+    pass
 
 
 
