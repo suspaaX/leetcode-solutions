@@ -19,17 +19,20 @@ Input: n = 1234
 Output: "1.234"
 
 '''
-n = 1234
-Output =  "1.234"
-
 n = 9875679
 Output =  "987"
 
+n = 1234
+Output =  "1.234"
+
+
 def thousandSeparator(n):
-    n1 = str(n)
-    k = (n1[-4:-1])
-    print(k)
-    m = n1.split(n1[0:2],'.')
-    print(m)
+    str1 = str(n)
+    left_digit = str1[1:len]
+
+
+
+
+
 
 thousandSeparator(n)

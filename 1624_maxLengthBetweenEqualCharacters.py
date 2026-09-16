@@ -39,32 +39,12 @@ Output = 2
 # Output = 6
 
 s = "mgntdygtxrvxjnwksqhxuxtrv"
-print(len(s))
-Output = 6
+Output = 18
 
-def maxLengthBetweenEqualCharacters(s):
-
-    lst = []
-    dict1 = {}
-    for i,j in enumerate(s):
-        if j in s[i+1:len(s)]:
-            idx = s.index(j,i+1)
-            if j in dict1:
-                dict1[j] = idx
-            else:
-                dict1[j] = idx
-            
-            wd = s[i:dict1.get(j)+1]
-            lst.append(wd)
-    print(lst)  
-
-    result = [] 
-    for k in lst:
-        m = k[1:len(k)-1]
-        result.append(len(m))
-
-    return max(result)
+# def maxLengthBetweenEqualCharacters(s):
+#     for i in range(1,len(s)+1):
+#         if s[i] in :
 
 
+# print(maxLengthBetweenEqualCharacters(s))
 
-print(maxLengthBetweenEqualCharacters(s))

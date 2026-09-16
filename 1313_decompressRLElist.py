@@ -34,17 +34,8 @@ Output = [2,4,4,4]
 
 def decompressRLElist(nums) :
     lst = []
-    for i in range(0,len(nums),2):
-        m = nums[i:i+2]
-        lst.append(m)
-    
-    lst2 = []
-    for k in lst:
-        print(k[1])
-        m2 = k[0]*lst(k[1])
-        lst2.append(m2)
+    for i in range(len(nums)):
+        pass
 
-    print(lst2)
-
-decompressRLElist(nums)  
+print(decompressRLElist(nums) ) 
         

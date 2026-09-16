@@ -28,11 +28,39 @@ Output: [12,5,6,13]
 Explanation: The decrypted code is [3+9, 2+3, 4+2, 9+4]. Notice that the numbers wrap around again. If k is negative, the sum is of the previous numbers.
 
 '''
+
+code = [1,2,3,4]
+k = 0
+Output =  [0,0,0,0]
+
+code = [5,7,1,4] 
+k = 3
+Output = [12,10,16,13]
+
 code = [2,4,9,3]
 k = -2
 Output =  [12,5,6,13]
 
-
 def decrypt(code,k) :
-    pass
-        
+    rslt = []
+    rslt2 = []
+    rslt3 = []
+    if k == 0:
+        for i in code:
+            val = str(i).replace(str(i),'0')
+            rslt.append(int(val))
+        return rslt
+    
+    elif k > 0:
+        for i in range(len(code)):
+            sum1 = sum(code)-code[i]
+            rslt2.append(sum1)
+        return rslt2
+    
+    # elif k < 0:
+    #     for i in range(len(code)-1):
+    #         sum2 = 
+    #         rslt3.append(sum2)
+    #     return rslt3
+    
+print(decrypt(code,k))

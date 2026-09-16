@@ -20,6 +20,8 @@ nums = [1,1,0,1,1,1]
 Output: 3
 
 def findMaxConsecutiveOnes(nums):
-    print(nums[0:len(nums)])
+    for i in range(len(nums)):
+        if i == 1 :
+            pass
 
 findMaxConsecutiveOnes(nums)

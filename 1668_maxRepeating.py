@@ -27,58 +27,41 @@ Input: sequence = "ababc", word = "ac"
 Output: 0
 Explanation: "ac" is not a substring in "ababc". 
 '''
+
+
+
+
+
+
+
+
+
+sequence = "ababc"
+word = "ac"
+Output: 0
+
 sequence = "ababc"
 word = "ba"
 Output: 1
+
+sequence = "aaaba aaab aaaba aaaba aaaba aaaba aaaba"
+word = "aaaba"
+Output: 5
 
 # sequence = "ababc" 
 # word = "ab"
 # Output: 2
 
-# sequence = "ababc"
-# word = "ac"
-# Output: 0
-
-
-
-
-
-
-# sequence = "aaabaaaabaaabaaaabaaaabaaaabaaaaba"
-# word = "aaaba"
-# Output: 5
-
-
-
 def maxRepeating(sequence,word):
     lst = []
     if word in sequence:
-        x = sequence.replace(word,'0')
-        print(x)
+        k = sequence.replace(word,str(1))
+        print(k)
+        m = k.count('1')
+        return m
     else:
         return 0
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
 
 print(maxRepeating(sequence,word))

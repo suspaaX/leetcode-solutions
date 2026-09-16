@@ -28,18 +28,17 @@ Explanation: There are no elements to the right of index 0.
 arr = [17,18,5,4,6,1]
 Output = [18,6,6,6,1,-1]
 
-# arr = [400]
-# Output = [-1]
+arr = [400]
+Output = [-1]
 
 def replaceElements(arr):
-    lst = []
+    rslt = []
     for i in range(len(arr)-1):
+        k  = max(arr[i+1:len(arr)])
+        rslt.append(k)
 
-        k =max(arr[i+1:len(arr)])
+    return rslt+[-1]
 
-        lst.append(k)
-
-    return (lst+[-1])
 
 
 print(replaceElements(arr))

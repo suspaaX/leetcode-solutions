@@ -51,14 +51,28 @@ arr2 = [-4,-3,6,10,20,30]
 d = 3
 Output: 2
 
+arr1 = [2,1,100,3]
+arr2 = [-5,-2,10,-3,7] 
+d = 6
+Output: 1
+
 
 def findTheDistanceValue(arr1,arr2,d):
     lst = []
     for i in arr1:
-        # print(i)
         for k in arr2:
             m = i-k
-            print(m)
+            if m < 0 :
+                m2 = m*(-1)
+                if m2 <= d:
+                    lst.append(m2)
+
+    print(lst)
+    # return len(lst)
 
 
-findTheDistanceValue(arr1,arr2,d)
+
+
+
+print(findTheDistanceValue(arr1,arr2,d))
+
