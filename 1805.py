@@ -34,8 +34,6 @@ word = "leet1234code234"
 Output = 2
 
 def numDifferentIntegers(word) :
-    m = int(word)
-    print(m)
-
+    pass
 
 numDifferentIntegers(word)
