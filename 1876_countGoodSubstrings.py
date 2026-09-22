@@ -48,7 +48,6 @@ def countGoodSubstrings(s):
         len3 = set(m)
         if len(len3) == 3:
             result.append(len3)
-    print( result)
 
     return len(result)
 
