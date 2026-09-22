@@ -83,14 +83,11 @@ def getLucky(s, k):
                 sum1 = sum1 + int(str1[0]) + int(str1[1])
 
     sum2 = 0
-    while True:
-        if k >=2:
-            for i in str(sum1):
-                sum2 = sum2 + int(i)
-            
+    if k >=2:
+        for i in str(sum1):
+            sum2 = sum2 + int(i)
+            return sum2
 
-    else:
-        return sum1
-            
+
 
 print(getLucky(s, k))
