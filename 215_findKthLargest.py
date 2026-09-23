@@ -30,13 +30,12 @@ nums = [3,2,3,1,2,4,5,5,6]
 k = 4
 Output: 4
 
-nums = [99,99]
-k = 1
-Output: 99
+# nums = [99,99]
+# k = 1
+# Output: 99
 
 def findKthLargest(nums,k) :
     pass
-
 
 
 print(findKthLargest(nums,k))

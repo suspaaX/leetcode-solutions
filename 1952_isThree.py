@@ -36,7 +36,6 @@ def isThree(n):
     else:
         return False
     
-
 print(isThree(n))
 
         
