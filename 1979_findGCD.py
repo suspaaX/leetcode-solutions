@@ -56,4 +56,4 @@ def findGCD(nums) :
 
     return (max(rslt))
 
-print(findGCD(nums))
+print(findGCD(nums))    
