@@ -39,11 +39,12 @@ Output= False
 def checkString(s):
     if 'b' in s:
         k = s.index('b')
-        
-    if 'a' in s and s.index('a') > k:
-        return False
-    else:
-        return True
+
+    for i in enumerate(s):
+        if 'a' in s and s.index('a') > k:
+            return False
+        else:
+            return True
 
 
 print(checkString(s))
