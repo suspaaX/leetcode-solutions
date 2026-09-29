@@ -61,11 +61,11 @@ def nextGreaterElement(nums1,nums2):
             m = nums2.index(i)
             print(nums2[m+1])
 
-    #         if nums2[m+1]>i:
-    #             rslt.append[m+1]
-    #         else:
-    #             rslt.append(-1)
-    # print(rslt)
+            if nums2[m+1]>i:
+                rslt.append[m+1]
+            else:
+                rslt.append(-1)
+    print(rslt)
 
 
 
